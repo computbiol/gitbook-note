@@ -7,8 +7,5 @@
     "sidebar" : {
         "Home" : "http://computbiol.com"
     }
- },
- "plugins": [
- "mathjax"
- ]
+ }
 }
