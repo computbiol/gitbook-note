@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置远程仓库的地址
-remote_url=git@github.com:PointStoneTeam/PointStone388.git
+remote_url=git@github.com:computbiol/gitbook-note.git
 # 获取当前时间
 cur_date="`date +%Y-%m-%d-%H:%M:%S`" 
 # 生成_book文件
