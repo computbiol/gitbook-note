@@ -6,7 +6,7 @@ remote_url=git@github.com:computbiol/gitbook-note.git
 cur_date="`date +%Y-%m-%d-%H:%M:%S`" 
 # 生成_book文件
 gitbook build
-
+#
 rm -rf .deploy_git/* | egrep .deploy_git/.git
 if [ ! -d ".deploy_git/" ];then
 	cp -R _book/ .deploy_git/
