@@ -16,7 +16,7 @@ _book
 *.pdf
 
 # deploy_status
-.deploy_git/
+gh-pages/
 
 # mac thins
 .DS_Store
