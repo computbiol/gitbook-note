@@ -9,7 +9,10 @@
 # 生成_book文件并托管到github
 gitbook build
 cd gh-pages/
-rm -rf `ls | grep -v README.md`
+#除了括号内的都删
+shopt -s extglob
+rm -rf !(README.md|CNAME)
+shopt -u extglob
 cd ../_book/
 cp -r `ls | grep -v deploy.sh` ../gh-pages/
 cd ../gh-pages/

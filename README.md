@@ -1,5 +1,3 @@
-# Introduction
+# 前言
 
-> #### Reference:
->
-> https://github.com/PointStoneTeam/PointStone388
+主要记录每天的一些学习情况，仅作备忘。
