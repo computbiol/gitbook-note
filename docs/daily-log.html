@@ -181,8 +181,32 @@ $ git init test.git    #&#x521B;&#x5EFA;computbiol&#x7528;&#x6237;&#x7684;&#x7B2
 $ git clone git@computbiol.com:computbiol/test.git
 </code></pre>
 </li>
+<li><h4 id="git&#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;">Git&#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</h4>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://blog.csdn.net/mengzuchao/article/details/80489864" target="_blank">https://blog.csdn.net/mengzuchao/article/details/80489864</a></p>
+<p>&#x5177;&#x4F53;&#x5B9E;&#x65BD;</p>
+<pre><code class="lang-shell">$ git branch
+* master
+$ git remote set-url --add origin git@computbiol.com:/var/www/html/note
+$ git remote -v
+origin    git@github.com:computbiol/gitbook-note.git (fetch)
+origin    git@github.com:computbiol/gitbook-note.git (push)
+origin    git@computbiol.com:/var/www/html/note (push)
+$ git remote set-url --delete origin git@computbiol.com:/var/www/html/note
+$ git remote -v
+origin    git@github.com:computbiol/gitbook-note.git (fetch)
+origin    git@github.com:computbiol/gitbook-note.git (push)
+
+#&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
+$ git branch
+* gh-pages
+$ git remote set-url --add origin git@computbiol.com:/var/www/html/note
+$ git remote -v
+origin    git@github.com:computbiol/gitbook-note.git (fetch)
+origin    git@github.com:computbiol/gitbook-note.git (push)
+origin    git@computbiol.com:/var/www/html/note (push)
+</code></pre>
+</li>
 </ul>
-<hr>
 <h3 id="20190815">2019.08.15</h3>
 <p><a href="https://zhuanlan.zhihu.com/p/27066364" target="_blank">sno-lncRNA&#x7684;&#x7814;&#x7A76;&#x5386;&#x7A0B;</a></p>
 <hr>
@@ -519,7 +543,7 @@ crontab</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"学习日志","level":"1.2","depth":1,"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"moonswing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Note","language":"zh-hans","links":{"sidebar":{"Home":"http://computbiol.com"}},"gitbook":"*","description":"记录每天的学习情况"},"file":{"path":"docs/daily-log.md","mtime":"2019-08-16T05:18:40.743Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T05:19:03.624Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"学习日志","level":"1.2","depth":1,"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"moonswing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Note","language":"zh-hans","links":{"sidebar":{"Home":"http://computbiol.com"}},"gitbook":"*","description":"记录每天的学习情况"},"file":{"path":"docs/daily-log.md","mtime":"2019-08-16T06:20:39.957Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T06:21:51.359Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
