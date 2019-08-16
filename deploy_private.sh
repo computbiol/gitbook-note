@@ -8,14 +8,14 @@
 
 # 生成_book文件并托管到github
 gitbook build
-cd gh-pages/
+cd note/
 #除了括号内的都删
 shopt -s extglob
-rm -rf !(README.md|CNAME)
+rm -rf !(README.md)
 shopt -u extglob
 cd ../_book/
-cp -r `ls | grep -v deploy.sh` ../gh-pages/
-cd ../gh-pages/
+cp -r `ls | grep -v deploy` ../note/
+cd ../note/
 git add -A
 git commit -m "Update"
 git push origin master
