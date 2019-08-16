@@ -1,8 +1,69 @@
 
 
+
+
+### 2019.08.16
+
+- #### 搭建私有Git服务器
+
+  参考：https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
+
+  ##### 具体实施
+
+  ```
+  $ ......	#参考上面链接
+  $ cd ~
+  $ mkdir computbiol	#computbiol相当于github上的个人用户名
+  $ cd computbiol	
+  $ git init test.git	#创建computbiol用户的第一个仓库test
+  
+  
+  clone with ssh：
+  git clone git@computbiol.com:computbiol/test.git
+  ```
+
+  
+
+  
+
+
+
+
+
+[sno-lncRNA的研究历程](https://zhuanlan.zhihu.com/p/27066364)
+
+
+
 ### 2019.08.14
 
+#### 生物信息学和计算生物学学习资源：
 
+1. [COMBINE](https://combine.org.au/)
+2. https://github.com/COMBINE-Australia
+3. [RNAseq analysis in R](https://combine-australia.github.io/RNAseq-R/)
+
+意外收获：http://www.bio-info-trainee.com/tmp/tutorial/video_list.html
+
+- [R语言基础笔记](https://api.rpubs.com/libaier/R_basic)
+
+- [ggplot2–绘制分布图](https://blog.csdn.net/tanzuozhev/article/details/51106291)
+
+- [R语言作图——density plot](https://zhuanlan.zhihu.com/p/50490855)
+
+- [生信人的20个R语言习题及其答案-土豆学习笔记](https://www.jianshu.com/p/dd4e285665e1)
+
+- [basic visualization for expression matrix](http://bio-info-trainee.com/tmp/basic_visualization_for_expression_matrix.html)
+
+- R语言中数组、矩阵和数据框有什么区别
+
+  > http://f.dataguru.cn/thread-728632-1-1.html
+  >
+  > http://f.dataguru.cn/thread-4433-1-1.html
+  >
+  > 向量是一维数组，矩阵是二维数组。
+  > 数据框通常是矩阵形式的数据，但矩阵各列可以是不同类型的。
+  > 但是，数据框有更一般的定义。它是一种特殊的列表对象，有一个值为“data.frame”的class 属性，各列表成员必须是向量（数值型、字符型、逻辑型）、因子、数值型矩阵、列表，或其它数据框。向量、因子成员为数据框提供一个变量，如果向量非数值型则会被强制转换为 因子。作为数据框变量的向量、因子或矩阵必须具有相同的长度（行数）。
+  > 尽管如此，我们一般还是可以把数据框看作是一种推广了的矩阵，它可以用矩阵形式显示 ，可以用对矩阵的下标引用方法来引用其元素或子集。
 
 ------
 
