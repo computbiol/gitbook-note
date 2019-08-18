@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置远程仓库的地址
-#remote_url=git@computbiol.com:/var/www/html/note.git
+#remote_url=git@computbiol.com:computbiol/note.git
 #git remote add origin $remote_url
 # 获取当前时间
 #cur_date="`date +%Y-%m-%d-%H:%M:%S`" 
