@@ -1,36 +1,112 @@
-
-
-
-
 ### 2019.08.16
 
-- #### 搭建私有Git服务器
+#### 搭建私有Git服务器实现web站点自动化部署
 
-  参考：https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
+参考：
 
-  ##### 具体实施
+https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
 
-  ```
-  $ ......	#参考上面链接
-  $ cd ~
-  $ mkdir computbiol	#computbiol相当于github上的个人用户名
-  $ cd computbiol	
-  $ git init test.git	#创建computbiol用户的第一个仓库test
-  
-  
-  clone with ssh：
-  git clone git@computbiol.com:computbiol/test.git
-  ```
+https://blog.csdn.net/u012763794/article/details/51007961
 
-  
+------
 
-  
+#### 远程服务器操作
+
+##### 搭建私有Git服务器并实现证书登录
+
+......
+
+##### 创建测试仓库
+
+```shell
+$ cd ~
+$ mkdir computbiol && cd computbiol	
+$ git init test.git	
+$ git clone git@computbiol.com:computbiol/test.git
+```
 
 
 
+##### 在私有远程服务器上创建裸仓库
 
+###### 裸仓库没有工作区，因为服务器上的Git仓库纯粹是为了共享，所以不让用户直接登录到服务器上去改工作区，并且服务器上的Git仓库通常都以.git结尾
+
+```shell
+$	git init --bare note.git
+$ sudo chown -R git:git note.git
+```
+
+
+
+##### 设置同步更新网站文件
+
+```shell
+$ cd /var/www/html/ && mkdir note
+$ sudo chown -R git:git note/
+$ cd note.git/hooks/
+$ vim post-receive
+```
+
+
+post-receive中添加如下内容：
+
+```shell
+# !/bin/sh
+GIT_WORK_TREE=/var/www/html/note/  git checkout -f
+```
+
+##### 增加文件执行权限
+
+```shell
+$ sudo chmod +x post-receive
+```
+
+
+
+#### 本地服务器操作
+
+##### 克隆裸仓库至本地实现自动化部署
+
+```shell
+$ git clone git@computbiol.com:computbiol/note.git
+$ ./deploy_private.sh
+```
+
+
+
+###### git init和git init --bare的区别
+
+用git init初始化的版本库,其保存的都是原文件,但某些用户的push操作可能导致冲突.而git init –bare创建的是裸仓库,它不保存原文件而只保存git历史提交的版本信息,并不允许用户直接在上面进行git操作
+
+------
+
+
+
+#### Git本地项目添加多个远程仓库
+
+参考：https://blog.csdn.net/mengzuchao/article/details/80489864
+
+具体实施
+
+```shell
+$ git remote set-url --add origin git@computbiol.com:/var/www/html/note
+$ git remote -v
+origin	git@github.com:computbiol/gitbook-note.git (fetch)
+origin	git@github.com:computbiol/gitbook-note.git (push)
+origin	git@computbiol.com:/var/www/html/note (push)
+$ git remote set-url --delete origin git@computbiol.com:/var/www/html/note
+$ git remote -v
+origin	git@github.com:computbiol/gitbook-note.git (fetch)
+origin	git@github.com:computbiol/gitbook-note.git (push)
+```
+
+
+
+### 2019.08.15
 
 [sno-lncRNA的研究历程](https://zhuanlan.zhihu.com/p/27066364)
+
+------
 
 
 
@@ -45,25 +121,20 @@
 意外收获：http://www.bio-info-trainee.com/tmp/tutorial/video_list.html
 
 - [R语言基础笔记](https://api.rpubs.com/libaier/R_basic)
-
 - [ggplot2–绘制分布图](https://blog.csdn.net/tanzuozhev/article/details/51106291)
-
 - [R语言作图——density plot](https://zhuanlan.zhihu.com/p/50490855)
-
 - [生信人的20个R语言习题及其答案-土豆学习笔记](https://www.jianshu.com/p/dd4e285665e1)
-
 - [basic visualization for expression matrix](http://bio-info-trainee.com/tmp/basic_visualization_for_expression_matrix.html)
-
 - R语言中数组、矩阵和数据框有什么区别
 
-  > http://f.dataguru.cn/thread-728632-1-1.html
-  >
-  > http://f.dataguru.cn/thread-4433-1-1.html
-  >
-  > 向量是一维数组，矩阵是二维数组。
-  > 数据框通常是矩阵形式的数据，但矩阵各列可以是不同类型的。
-  > 但是，数据框有更一般的定义。它是一种特殊的列表对象，有一个值为“data.frame”的class 属性，各列表成员必须是向量（数值型、字符型、逻辑型）、因子、数值型矩阵、列表，或其它数据框。向量、因子成员为数据框提供一个变量，如果向量非数值型则会被强制转换为 因子。作为数据框变量的向量、因子或矩阵必须具有相同的长度（行数）。
-  > 尽管如此，我们一般还是可以把数据框看作是一种推广了的矩阵，它可以用矩阵形式显示 ，可以用对矩阵的下标引用方法来引用其元素或子集。
+> http://f.dataguru.cn/thread-728632-1-1.html
+>
+> http://f.dataguru.cn/thread-4433-1-1.html
+>
+> 向量是一维数组，矩阵是二维数组。
+> 数据框通常是矩阵形式的数据，但矩阵各列可以是不同类型的。
+> 但是，数据框有更一般的定义。它是一种特殊的列表对象，有一个值为“data.frame”的class 属性，各列表成员必须是向量（数值型、字符型、逻辑型）、因子、数值型矩阵、列表，或其它数据框。向量、因子成员为数据框提供一个变量，如果向量非数值型则会被强制转换为 因子。作为数据框变量的向量、因子或矩阵必须具有相同的长度（行数）。
+> 尽管如此，我们一般还是可以把数据框看作是一种推广了的矩阵，它可以用矩阵形式显示 ，可以用对矩阵的下标引用方法来引用其元素或子集。
 
 ------
 
