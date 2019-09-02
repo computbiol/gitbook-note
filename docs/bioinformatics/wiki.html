@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>生信百科 · Gitbook Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="moonswing">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../computational_biology/" />
+    
+    
+    <link rel="prev" href="toolkit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://computbiol.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../daily-log.html">
+            
+                <a href="../daily-log.html">
+            
+                    
+                    学习日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../molecular_biology/">
+            
+                <a href="../molecular_biology/">
+            
+                    
+                    分子生物学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    生物信息学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="biosoft.html">
+            
+                <a href="biosoft.html">
+            
+                    
+                    生信软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="toolkit.html">
+            
+                <a href="toolkit.html">
+            
+                    
+                    生信小工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="wiki.html">
+            
+                <a href="wiki.html">
+            
+                    
+                    生信百科
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../computational_biology/">
+            
+                <a href="../computational_biology/">
+            
+                    
+                    计算生物学
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >生信百科</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#data-file-formats"><b>1. </b>Data File Formats</a></li><li><span class="title-icon "></span><a href="#dna&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;"><b>2. </b>DNA&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;</a></li><li><span class="title-icon "></span><a href="#rna&#x7F16;&#x8F91;&#x7B80;&#x4ECB;"><b>3. </b>RNA&#x7F16;&#x8F91;&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x54EA;&#x4E9B;rna&#x4E0D;&#x5177;&#x6709;ploya-tail"><b>4. </b>&#x54EA;&#x4E9B;RNA&#x4E0D;&#x5177;&#x6709;ploy(A) tail</a></li><li><span class="title-icon "></span><a href="#rnase-r"><b>5. </b>RNase R</a></li><li><span class="title-icon "></span><a href="#&#x73AF;&#x72B6;rna&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;"><b>6. </b>&#x73AF;&#x72B6;RNA&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#rna-fish"><b>7. </b>RNA-FISH</a></li><li><span class="title-icon "></span><a href="#&#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;fusion-gene&#xFF09;"><b>8. </b>&#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;Fusion gene&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x70B9;&#x7A81;&#x53D8;"><b>9. </b>&#x70B9;&#x7A81;&#x53D8;</a></li><li><span class="title-icon "></span><a href="#crisprcas9&#x6280;&#x672F;"><b>10. </b>CRISPR/cas9&#x6280;&#x672F;</a></li></ul></div><h1 id="data-file-formats"><a name="data-file-formats" class="anchor-navigation-ex-anchor" href="#data-file-formats"><i class="fa fa-link" aria-hidden="true"></i></a>1. Data File Formats</h1>
+<p><a href="https://genome.ucsc.edu/FAQ/FAQformat.html" target="_blank">https://genome.ucsc.edu/FAQ/FAQformat.html</a></p>
+<h1 id="dna&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;"><a name="dna&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;" class="anchor-navigation-ex-anchor" href="#dna&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;"><i class="fa fa-link" aria-hidden="true"></i></a>2. DNA&#x94FE;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5C0F;&#x7591;&#x60D1;</h1>
+<p><a href="https://www.jianshu.com/p/2a118933d716" target="_blank">https://www.jianshu.com/p/2a118933d716</a></p>
+<h1 id="rna&#x7F16;&#x8F91;&#x7B80;&#x4ECB;"><a name="rna&#x7F16;&#x8F91;&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#rna&#x7F16;&#x8F91;&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>3. RNA&#x7F16;&#x8F91;&#x7B80;&#x4ECB;</h1>
+<p><a href="https://mp.weixin.qq.com/s/o8Gth5OY-xT3IEozjklbHg" target="_blank">https://mp.weixin.qq.com/s/o8Gth5OY-xT3IEozjklbHg</a></p>
+<h1 id="&#x54EA;&#x4E9B;rna&#x4E0D;&#x5177;&#x6709;ploya-tail"><a name="&#x54EA;&#x4E9B;rna&#x4E0D;&#x5177;&#x6709;ploya-tail" class="anchor-navigation-ex-anchor" href="#&#x54EA;&#x4E9B;rna&#x4E0D;&#x5177;&#x6709;ploya-tail"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x54EA;&#x4E9B;RNA&#x4E0D;&#x5177;&#x6709;ploy(A) tail</h1>
+<p>&#x539F;&#x6838;&#x751F;&#x7269;&#x7684;RNA&#x3001;&#x771F;&#x6838;&#x751F;&#x7269;&#x7684;rRNA&#x548C;tRNA&#x4E0D;&#x5177;&#x6709;PolyA&#x5C3E;&#x5DF4;&#x3002;</p>
+<h1 id="rnase-r"><a name="rnase-r" class="anchor-navigation-ex-anchor" href="#rnase-r"><i class="fa fa-link" aria-hidden="true"></i></a>5. RNase R</h1>
+<p>RNase R ( Ribonuclease R ) &#x662F;&#x4E00;&#x79CD;&#x6765;&#x6E90;&#x4E8E;&#x5927;&#x80A0;&#x6746;&#x83CC;RNR&#x8D85;&#x5BB6;&#x65CF;&#x7684;3&#x2019;-5&#x2019;&#x6838;&#x7CD6;&#x6838;&#x9178;&#x5916;&#x5207;&#x9176;&#xFF0C;&#x53EF;&#x4ECE;3&#x2019;-5&#x2019;&#x65B9;&#x5411;&#x5C06;RNA&#x9010;&#x6B65;&#x5207;&#x5272;&#x6210;&#x4E8C;&#x6838;&#x82F7;&#x9178;&#x548C;&#x4E09;&#x6838;&#x82F7;&#x9178;&#x3002;RNase R&#x80FD;&#x591F;&#x6D88;&#x5316;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x6027;RNA&#x5206;&#x5B50;&#xFF0C;&#x4F46;&#x4E0D;&#x6613;&#x6D88;&#x5316;&#x73AF;&#x5F62;RNA&#xFF0C;&#x56E0;&#x6B64;&#x5E38;&#x7528;&#x4E8E;circRNA&#x7684;&#x5BCC;&#x96C6;&#x548C;&#x9274;&#x5B9A;&#x5B9E;&#x9A8C;&#x3002;</p>
+<h1 id="&#x73AF;&#x72B6;rna&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;"><a name="&#x73AF;&#x72B6;rna&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x72B6;rna&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x73AF;&#x72B6;RNA&#x5EFA;&#x5E93;&#x65B9;&#x5F0F;</h1>
+<p>&#x901A;&#x8FC7;&#x53BB;&#x9664;rRNA&#x3001;&#x7EBF;&#x6027;RNA&#x7684;&#x94FE;&#x7279;&#x5F02;&#x6027;&#x5EFA;&#x5E93;&#x65B9;&#x6CD5;&#x5BCC;&#x96C6;circRNA&#x3002;</p>
+<h1 id="rna-fish"><a name="rna-fish" class="anchor-navigation-ex-anchor" href="#rna-fish"><i class="fa fa-link" aria-hidden="true"></i></a>7. RNA-FISH</h1>
+<p>RNA&#x8367;&#x5149;&#x539F;&#x4F4D;&#x6742;&#x4EA4;</p>
+<h1 id="&#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;fusion-gene&#xFF09;"><a name="&#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;fusion-gene&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;fusion-gene&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x878D;&#x5408;&#x57FA;&#x56E0;&#xFF08;Fusion gene&#xFF09;</h1>
+<p>&#x878D;&#x5408;&#x57FA;&#x56E0;&#x662F;&#x6307;&#x4E24;&#x4E2A;&#x57FA;&#x56E0;&#x7684;&#x5168;&#x90E8;&#x6216;&#x90E8;&#x5206;&#x5E8F;&#x5217;&#x878D;&#x5408;&#x800C;&#x6210;&#x7684;&#x5D4C;&#x5408;&#x57FA;&#x56E0;&#xFF0C;&#x4E00;&#x822C;&#x7531;&#x67D3;&#x8272;&#x4F53;&#x6613;&#x4F4D;&#x3001;&#x7F3A;&#x5931;&#x7B49;&#x539F;&#x56E0;&#x6240;&#x81F4;&#x3002;</p>
+<p><img src="http://computbiol.com/webdav/fusion_gene.jpg" alt="fusion_gene"></p>
+<blockquote>
+<p>&#x53C2;&#x8003;</p>
+<p><a href="https://www.jianshu.com/p/865972d9f9a9" target="_blank">&#x63ED;&#x79D8;&#x8F6C;&#x5F55;&#x7EC4;&#x5206;&#x6790;&#x4E2D;&#x7684;&#x878D;&#x5408;&#x57FA;&#x56E0;&#x9274;&#x5B9A;</a></p>
+<p><a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/fusion-gene" target="_blank">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/fusion-gene</a></p>
+<p><a href="https://www.jianshu.com/p/63b18075aa18" target="_blank">https://www.jianshu.com/p/63b18075aa18</a></p>
+</blockquote>
+<h1 id="&#x70B9;&#x7A81;&#x53D8;"><a name="&#x70B9;&#x7A81;&#x53D8;" class="anchor-navigation-ex-anchor" href="#&#x70B9;&#x7A81;&#x53D8;"><i class="fa fa-link" aria-hidden="true"></i></a>9. &#x70B9;&#x7A81;&#x53D8;</h1>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p><a href="http://www.bio-info-trainee.com/1176.html" target="_blank">http://www.bio-info-trainee.com/1176.html</a></p>
+<p><a href="https://www.plob.org/article/5630.html" target="_blank">https://www.plob.org/article/5630.html</a></p>
+</blockquote>
+<h1 id="crisprcas9&#x6280;&#x672F;"><a name="crisprcas9&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#crisprcas9&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>10. CRISPR/cas9&#x6280;&#x672F;</h1>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p><a href="https://www.youtube.com/watch?v=o1MdiW5UZh0" target="_blank">https://www.youtube.com/watch?v=o1MdiW5UZh0</a></p>
+<p><a href="http://wap.sciencenet.cn/blog-3160644-983657.html?mobile=1" target="_blank">http://wap.sciencenet.cn/blog-3160644-983657.html?mobile=1</a></p>
+<p><a href="https://www.jianshu.com/p/043e011d9a26" target="_blank">https://www.jianshu.com/p/043e011d9a26</a></p>
+<p><a href="http://news.bioon.com/article/6728522.html" target="_blank">http://news.bioon.com/article/6728522.html</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="toolkit.html" class="navigation navigation-prev " aria-label="Previous page: 生信小工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../computational_biology/" class="navigation navigation-next " aria-label="Next page: 计算生物学">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"生信百科","level":"1.4.3","depth":2,"next":{"title":"计算生物学","level":"1.5","depth":1,"path":"docs/computational_biology/README.md","ref":"docs/computational_biology/README.md","articles":[]},"previous":{"title":"生信小工具","level":"1.4.2","depth":2,"path":"docs/bioinformatics/toolkit.md","ref":"docs/bioinformatics/toolkit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","search-plus","toggle-chapters","code","copy-code-button","splitter","todo","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"todo":{},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"moonswing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Note","language":"zh-hans","links":{"sidebar":{"Home":"http://computbiol.com"}},"gitbook":"*"},"file":{"path":"docs/bioinformatics/wiki.md","mtime":"2019-08-27T13:05:45.109Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-02T10:50:03.106Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
