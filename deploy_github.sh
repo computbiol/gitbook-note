@@ -14,7 +14,7 @@ shopt -s extglob
 rm -rf !(README.md|CNAME)
 shopt -u extglob
 cd ../_book/
-cp -r `ls | grep -v deploy.sh` ../gh-pages/
+cp -r `ls | grep -v 'deploy'` ../gh-pages/
 cd ../gh-pages/
 git add -A
 git commit -m "Update"

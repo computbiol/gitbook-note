@@ -1,4 +1,539 @@
-### 2019.08.16
+# 20200815
+
+mac下批量替换文件中的字符串
+
+不备份替换
+
+```
+grep "DE_analysis_v2" * -R | awk -F: '{print $1}' | sort | uniq | xargs sed -i "" 's/DE_analysis_v2/DE_analysis_v3/g'
+```
+
+备份后替换
+
+```
+grep "DE_analysis_v2" * -R | awk -F: '{print $1}' | sort | uniq | xargs sed -i "bak" 's/DE_analysis_v2/DE_analysis_v3/g'20200815
+```
+
+
+
+# 20200719
+
+Ubuntu Server如何开启热点
+Ubuntu Server 18 Wifi Hotspot setup
+https://raspberrypi.stackexchange.com/questions/109425/ubuntu-server-18-wifi-hotspot-setup
+ubuntu18.04 配置桥接开启AP热点
+https://www.jianshu.com/p/06ef3610c2f9
+https://github.com/oblique/create_ap
+
+# 20200525
+
+excel转csv
+
+```shell
+brew install gnumeric
+ssconvert myexcel.xlsx myexcel.csv
+```
+
+ubuntu安装pandoc相关的依赖
+```
+sudo apt-get install texlive-full
+pandoc test.html -o test.pdf
+
+```
+
+
+
+
+# 20200416
+
+mac安装cadaver
+
+http://www.webdav.org/cadaver/
+
+```
+brew install cadaver
+```
+
+
+
+# 20200308
+
+mac充电问题一般如何解决
+>参考：
+>如何重置 Mac 的 SMC
+>https://support.apple.com/zh-cn/HT201295
+
+# 20200306
+
+清空file文件
+
+```
+cat /dev/null > file
+```
+
+Google搜索技巧
+
+https://www.jianshu.com/p/badee8f043e5
+
+
+
+# 20200226
+
+Sublime Text3如何配置Python交互式命令行？
+
+https://blog.csdn.net/didi_ya/article/details/104165280
+
+jupyter由于无法import新包的解决方案
+
+https://blog.csdn.net/u012491646/article/details/79688979
+
+# 20200222
+
+工具使用原则：
+
+能用系统级的就不要另外下载安装。
+
+追求极致的自由的稳定。
+
+
+
+Jupyter NoteBook 的快捷键使用指南
+
+https://opus.konghy.cn/ipynb/jupyter-notebook-keyboard-shortcut.html
+
+
+
+# 20200221
+
+静态博客Gridea
+
+https://cclog.net/post/recommend-gridea/
+
+静态站点Docsite
+
+https://docsite.js.org/en-us/docs/installation.html
+
+> 不过还是不够自由，也不够成熟，暂时不玩，以后再说吧。
+
+
+
+日历
+
+方式一：通过邮箱自动订阅推送
+
+首先注册一个outlook邮箱
+
+mac或ios的日历打开需要共享的日历
+
+然后在outlook邮箱里订阅mac或ios的日历
+
+> 这个过程可能很慢。
+>
+> 此更新可能需要超过 24 小时才能完成，但大约每 3 个小时进行一次更新。
+>
+> [https://support.office.com/zh-cn/article/%E5%9C%A8-outlook-com-%E4%B8%AD%E5%AF%BC%E5%85%A5%E6%88%96%E8%AE%A2%E9%98%85%E6%97%A5%E5%8E%86-cff1429c-5af6-41ec-a5b4-74f2c278e98c](https://support.office.com/zh-cn/article/在-outlook-com-中导入或订阅日历-cff1429c-5af6-41ec-a5b4-74f2c278e98c)
+
+安卓手机端选择Exchange登陆outlook邮箱
+
+outlook日历自动推送到手机日历
+
+> 这个过程很快，几乎实时。
+
+以小米手机为例
+
+
+
+方式二：手动导入
+
+安卓iCal Import/Export工具
+
+> 不推荐手动导入，除非是一次性的，否则后面对日历编辑后不能自动同步更新。
+
+
+
+小技巧：
+
+如何管理和删除MIUI系统里的日历账户？
+
+使用iCal Import/Export应用的编辑日历功能。
+
+mac上的日历如何同步到outlook？
+
+同步工具**SyncMate**（这个工具功能强大）。
+
+
+
+参考：
+
+iCal 课表使用指引
+
+[https://i.scnu.edu.cn/ical/doc#macOS_%E4%B8%8B%E7%9A%84%E5%AF%BC%E5%85%A5](https://i.scnu.edu.cn/ical/doc#macOS_下的导入)
+
+How to sync Outlook Calendar with Mac
+
+https://www.sync-mac.com/sync-outlook-calendar-mac.html
+
+
+
+
+
+# Wed Feb 12 22:36:57 CST 2020
+
+静态开源站点搭建工具 Docsite
+
+https://docsite.js.org/en-us/docs/installation.html
+
+VIM编辑代码时的一些技巧——格式化与注释
+
+https://blog.csdn.net/mzlogin/article/details/5413878
+
+【R语言数据导出txt】 write.table 函数用法
+
+https://blog.csdn.net/u013421629/article/details/72771241
+
+# Tue Feb 11 22:44:46 CST 2020
+
+Multiple SequenceServer instances
+
+https://medium.com/coding-design/setting-up-sequenceserver-edf9d992998c
+
+
+
+# Mon Feb 10 15:14:07 CST 2020
+
+```
+date | pbcopy
+```
+
+Pubmed Parser: A Python Parser for PubMed Open-Access XML Subset and MEDLINE XML Dataset
+
+https://titipata.github.io/pubmed_parser/index.html
+
+https://github.com/titipata/pubmed_parser
+
+
+
+Python + 生物信息 04 ：批量下载基因与文献
+
+https://zhuanlan.zhihu.com/p/54611852
+
+
+
+微信搜索
+
+生信菜鸟团
+
+我的Python笔记·BioPython（一）
+
+我的Python笔记·BioPython（二）
+
+
+
+科研汪逆袭技能必备！用Python批量下载文献摘要并生成“高逼格”词云
+
+
+
+R语言 | PubMed可以这样玩
+
+
+
+批量获取 PubMed 文献信息
+
+
+
+# 2020.02.04
+
+创建软链接
+
+ln  -s  [源文件或目录]  [目标文件或目录]
+
+例如：
+
+当前路径创建test 引向/var/www/test 文件夹 
+
+ln –s  /var/www/test  test
+
+删除软链接
+
+和删除普通的文件是一眼的，删除都是使用rm来进行操作
+
+ rm –rf 软链接名称（**请注意不要在后面加”/”，rm –rf 后面加不加”/” 有区别，如果加"/"则会将原文件夹一并删掉**）
+
+例如：
+
+只删除软链接test
+
+rm –rf test
+
+软链接和指向的原文件夹一并被删除
+
+rm –rf test/
+
+# 2020.02.03
+
+### mac内网穿透
+
+https://ngrok.com/
+
+
+
+
+
+# 2020.02.02
+
+### virtualenv创建一套“隔离”的Python运行环境
+
+virtualenv的介绍及基本使用（所有命令解释）
+
+https://blog.csdn.net/u012206617/article/details/90294421
+
+virtualenv
+
+https://www.liaoxuefeng.com/wiki/1016959663602400/1019273143120480
+
+
+
+### 远程连接自己阿里云MySQL
+
+```
+mysql -u root -p  -h 139.196.95.208 -P 3306
+```
+
+
+
+# 2020.01.01
+
+指定应用打开文件
+
+```
+sudo open -a /Applications/IINA.app /Users/zhangsf/Movies/favorite.mp4
+```
+
+
+
+# 2020.01.12
+
+## 解决从google drive下载大文件不能断点续传问
+
+利用MultCloud下载
+
+
+
+## UBuntu国内镜像地址下载
+
+http://www.oschina.net/p/ubuntu
+
+http://releases.ubuntu.com/
+
+http://mirrors.163.com/ubuntu-releases/14.04/
+
+## Universal USB Installer制作启动U盘
+
+https://universal-usb-installer.en.softonic.com/
+
+
+
+sudo curl ipinfo.io
+
+sudo curl ifconfig.me
+
+
+
+利用ssh反向代理和autossh实现从外网连接内网服务器
+
+https://blog.csdn.net/u012843189/article/details/79522738
+
+
+
+Linux系统扩展硬盘空间
+
+https://www.jianshu.com/p/ba7090b1ef38
+
+吸取教训：新的硬盘空间一定不能挂载在/home/moonswing，否则导致无法登陆图形界面
+
+timeout in locking authority file /home/pi/.xauthority
+
+
+
+# 2019.12.05
+
+## Git配置用户名和邮箱
+
+### 全局设置（对所有git工程都有效）
+
+> 设置用户名：git config --global user.name 用户名
+> 设置邮箱： git config --global user.email 邮箱
+
+### 对特定工程设置（要在命令行中切换到特定工程目录下执行）
+
+> 设置用户名：git config user.name 用户名
+>
+> 设置邮箱： git config user.email 邮箱
+
+# 2019.12.01
+
+## 今日诗词
+
+https://www.jinrishici.com/
+
+## 命令行下载工具wget/curl/axel/aria2c
+
+```
+$ time axel -n 50 ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz
+real	6m10.823s
+user	0m3.224s
+sys	0m8.276s
+```
+
+
+
+```
+$ wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz
+real	0m59.839s
+user	0m0.521s
+sys	0m2.396s
+```
+
+
+
+```
+$ time aria2c ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz
+real	1m16.054s
+user	0m0.959s
+sys	0m1.590s
+```
+
+youtube-dl下载YouTube视频
+
+```
+youtube-dl -f best https://www.youtube.com/watch?v=cVe2hJI-K8k
+```
+
+you-get
+```
+you-get -o ~/Desktop/ -O Introduction_to_BioCyc 'https://www.youtube.com/watch?v=b5hVf8bBSe4&feature=emb_logo'
+```
+
+
+
+# 2019.11.29
+
+## split分割文件
+
+```shell
+split -l 193 gwas_downloads.sh -d -a 4 gwas_downloads_ && ls | grep 'gwas_downloads_' | xargs -n1 -i{} mv {} {}.sh
+```
+
+https://blog.csdn.net/pzasdq/article/details/52830098
+
+https://blog.csdn.net/mxgsgtc/article/details/12048919
+
+## shell中执行sudo命令
+
+```shell
+echo "passwd"|sudo -S command
+```
+
+
+
+# 2019.10.24
+
+能够提前做的事情为什么不准备好呢？？？
+
+
+
+# 2019.10.08
+
+## python安装cplex
+
+> cplex目前只支持python3.6
+
+```
+conda activate operations-research
+```
+
+operations-research环境里安装了python3.6
+
+
+
+
+
+# 2019.10.05
+
+> 程序员怎样记账 
+>
+> https://zhuanlan.zhihu.com/p/71639319
+>
+> ledger
+>
+> https://www.ledger-cli.org/
+>
+> hledger 
+>
+> https://hledger.org/
+>
+> 使用emcas+ledger记账
+>
+> [https://flysands.github.io/blog/2017-12-27-%E4%BD%BF%E7%94%A8emacs%E5%92%8Cledger%E8%AE%B0%E8%B4%A6.html](https://flysands.github.io/blog/2017-12-27-使用emacs和ledger记账.html)
+>
+> Ledger CLI
+>
+> https://tengl.net/blog/2019/5/23/double-entry-accounting-with-ledger-cli
+>
+> 钱都到哪儿去了 - 使用 BEANCOUNT 自动记账
+>
+>  https://lyric.im/beancount
+
+# 2019.10.02
+## ffmpeg命令
+
+用于音视频的转码，加水印，去水印，视频剪切，提取音频，提取视频，码率控制等等功能。
+例如：提取视频的音频
+
+```shell
+ffmpeg -i bb.flv bb.mp3
+```
+# 2019.09.08
+
+wget下载时自动修改成真实的文件名
+
+```shell
+wget --content-disposition
+```
+
+wget指定下载目录
+
+```
+wget 网址 -P/--directory 目录
+```
+
+
+
+# 2019.09.05
+
+##如何理解递归
+
+> https://blog.csdn.net/weixin_43405546/article/details/83045725
+> 
+
+
+# 2019.09.03
+
+## 矩阵
+
+理解矩阵（一）
+
+https://blog.csdn.net/myan/article/details/647511
+
+理解矩阵（二）
+
+https://blog.csdn.net/myan/article/details/649018
+
+理解矩阵（三）
+
+https://blog.csdn.net/myan/article/details/1865397
+
+# 2019.08.16
 
 #### 搭建私有Git服务器实现web站点自动化部署
 
@@ -32,7 +567,7 @@ $ git clone git@computbiol.com:computbiol/test.git
 ###### 裸仓库没有工作区，因为服务器上的Git仓库纯粹是为了共享，所以不让用户直接登录到服务器上去改工作区，并且服务器上的Git仓库通常都以.git结尾
 
 ```shell
-$	git init --bare note.git
+$ git init --bare note.git
 $ sudo chown -R git:git note.git
 ```
 
@@ -102,7 +637,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.15
+# 2019.08.15
 
 [sno-lncRNA的研究历程](https://zhuanlan.zhihu.com/p/27066364)
 
@@ -110,7 +645,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.14
+# 2019.08.14
 
 #### 生物信息学和计算生物学学习资源：
 
@@ -140,7 +675,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.13
+# 2019.08.13
 
 - #### Git
 
@@ -169,7 +704,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.12
+# 2019.08.12
 
 - #### npm
 
@@ -178,7 +713,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
   - [Node.js之rollbackFailedOptional错误处理](https://www.jianshu.com/p/37b9322d6ceb)
   - [npm 安装的时候出现rollbackFailedOptional](https://www.jianshu.com/p/4a0c514d2c05)
 
-### 2019.08.11
+# 2019.08.11
 
 - GitHub Pages搭建网站: https://gitbeijing.com/pages.html
 - 《搬进 GitHub》：https://gitbeijing.com/
@@ -188,7 +723,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.10
+# 2019.08.10
 
 - [MultiQC](https://multiqc.info/)
 - [软件安装](http://www.biotrainee.com/thread-856-1-1.html)
@@ -205,7 +740,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.07
+# 2019.08.07
 
 - #### [提问的智慧](http://doc.zengrong.net/smart-questions/cn.html)
 
@@ -217,7 +752,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.06
+# 2019.08.06
 
 - #### [Nucleic Acids Research Database Summary](http://www.oxfordjournals.org/our_journals/nar/database/c/)
 
@@ -225,7 +760,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.08.02
+# 2019.08.02
 
 - #### xargs命令
 
@@ -233,7 +768,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
   ls *.csv | xargs ls -l
   ```
 
-### 2019.08.01
+# 2019.08.01
 
 - #### 在shell脚本里用conda激活环境报错
 
@@ -327,7 +862,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.07.31
+# 2019.07.31
 
 - #### **合并表达矩阵**
 
@@ -351,7 +886,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.07.28
+# 2019.07.28
 
 - ### mac安装conda后去掉前面的(base)
 
@@ -376,7 +911,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.07.27
+# 2019.07.27
 
 - #### 学习[R Markdown](https://rmarkdown.rstudio.com/)的使用
 
@@ -384,7 +919,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.07.26
+# 2019.07.26
 
 - #### Sublime Text进入插件管理快捷键
 
@@ -398,7 +933,7 @@ origin	git@github.com:computbiol/gitbook-note.git (push)
 
 
 
-### 2019.07.26之前
+# 2019.07.26之前
 
 - #### vim临时设置
 
